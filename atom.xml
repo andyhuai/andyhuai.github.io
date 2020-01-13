@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyhuai.github.io</id>
     <title>Gridea</title>
-    <updated>2019-06-24T10:56:56.886Z</updated>
+    <updated>2020-01-13T09:16:52.602Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyhuai.github.io"/>
     <link rel="self" href="https://andyhuai.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://andyhuai.github.io/images/avatar.png</logo>
     <icon>https://andyhuai.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://andyhuai.github.io/post/hello-gridea</id>
