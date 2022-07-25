@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Mon, 25 Jul 2022 11:28:02 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[1. Welcome to Joplin!]]></title>
+            <guid>75491c697afc4627af557ce5d5c117a3</guid>
+            <pubDate>Wed, 20 Jul 2022 12:02:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="welcome-to-joplin">Welcome to Joplin!</h1>
+<p>Joplin is a free, open source note taking and to-do application, which helps you write and organise your notes, and synchronise them between your devices. The notes are searchable, can be copied, tagged and modified either from the application directly or from your own text editor. The notes are in <a title="https://joplinapp.org/help/#markdown" href="https://joplinapp.org/help/#markdown">Markdown format</a>. Joplin is available as a <strong>desktop</strong>, <strong>mobile</strong> and <strong>terminal</strong> application.</p>
+<p>The notes in this notebook give an overview of what Joplin can do and how to use it. In general, the three applications share roughly the same functionalities; any differences will be clearly indicated.</p>
+<p><img src="/_resources/3d29443efd7d4a3d99cd2178705f0e54.png" /></p>
+<h2 id="joplin-is-divided-into-three-parts">Joplin is divided into three parts</h2>
+<p>Joplin has three main columns:</p>
+<ul>
+<li>
+<p><strong>Sidebar</strong> contains the list of your notebooks and tags, as well as the synchronisation status.</p>
+</li>
+<li>
+<p><strong>Note List</strong> contains the current list of notes - either the notes in the currently selected notebook, the notes in the currently selected tag, or search results.</p>
+</li>
+<li>
+<p><strong>Note Editor</strong> is the place where you write your notes. There is a <strong>Rich Text editor</strong> and a <strong>Markdown editor</strong> - click on the <strong>Toggle editor</strong> button in the top right hand corner to switch between both! You may also use an <a title="https://joplinapp.org/help/#external-text-editor" href="https://joplinapp.org/help/#external-text-editor">external editor</a> to edit notes. For example you can use Typora as an external editor and it will display the note as well as any embedded images.</p>
+</li>
+</ul>
+<h2 id="writing-notes-in-markdown">Writing notes in Markdown</h2>
+<p>Markdown is a lightweight markup language with plain text formatting syntax. Joplin supports a <a title="https://joplinapp.org/markdown/" href="https://joplinapp.org/markdown/">Github-flavoured Markdown syntax</a> with a few variations and additions.</p>
+<p>In general, while Markdown is a markup language, it is meant to be human readable, even without being rendered. This is a simple example (you can see how it looks in the viewer panel):</p>
+<hr />
+<h1 id="heading">Heading</h1>
+<h2 id="sub-heading">Sub-heading</h2>
+<p>Paragraphs are separated by a blank line. Text attributes <em>italic</em>, <strong>bold</strong> and <code>monospace</code> are supported. You can create bullet lists:</p>
+<ul>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ul>
+<p>Or numbered lists:</p>
+<ol>
+<li>wash</li>
+<li>rinse</li>
+<li>repeat</li>
+</ol>
+<p>This is a <a title="https://joplinapp.org" href="https://joplinapp.org">link</a> and, finally, below is a horizontal rule:</p>
+<hr />
+<p>A lot more is possible including adding code samples, math formulae or checkbox lists - see the <a title="https://joplinapp.org/help/#markdown" href="https://joplinapp.org/help/#markdown">Markdown documentation</a> for more information.</p>
+<h2 id="organising-your-notes">Organising your notes</h2>
+<h3 id="with-notebooks">With notebooks</h3>
+<p>Joplin notes are organised into a tree of notebooks and sub-notebooks.</p>
+<ul>
+<li>On <strong>desktop</strong>, you can create a notebook by clicking on New Notebook, then you can drag and drop them into other notebooks to organise them as you wish.</li>
+<li>On <strong>mobile</strong>, press the “+” icon and select “New notebook”.</li>
+<li>On <strong>terminal</strong>, press <code>:mn</code></li>
+</ul>
+<p><img src="/_resources/31cda240d27a44a5a152deb61b40e245.png" /></p>
+<h3 id="with-tags">With tags</h3>
+<p>The second way to organise your notes is using tags:</p>
+<ul>
+<li>On <strong>desktop</strong>, right-click on any note in the Note List, and select “Edit tags”. You can then add the tags, separating them by commas.</li>
+<li>On <strong>mobile</strong>, open the note and press the “⋮” button and select “Tags”.</li>
+<li>On <strong>terminal</strong>, type <code>:help tag</code> for the available commands.</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[4. Tips]]></title>
+            <guid>db83aa5aa6354b479872da68a2374424</guid>
+            <pubDate>Wed, 20 Jul 2022 12:02:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="tips">Tips</h1>
+<p>The first few notes should have given you an overview of the main functionalities of Joplin, but there’s more it can do. See below for some of these features and how to get more help using the app:</p>
+<h2 id="web-clipper">Web clipper</h2>
+<p><img src="/_resources/66246342a8ae4aae9116314677ec8e40.png" /></p>
+<p>The Web Clipper is a browser extension that allows you to save web pages and screenshots from your browser. To start using it, open the Joplin desktop application, go to the Web Clipper Options and follow the instructions.</p>
+<p>More info on the official website: <a title="https://joplinapp.org/clipper/" href="https://joplinapp.org/clipper/">https://joplinapp.org/clipper/</a></p>
+<h2 id="plugins">Plugins</h2>
+<p>Joplin supports many plugins that allows you to add new features to the app, such as tabs, a table of content for your notes, a way to manage favourite notes, and many other ones. To add a plugin, go to the “Plugins” section in the config screen. From there you can search and install plugins, as well as search or update plugins.</p>
+<h2 id="attachments">Attachments</h2>
+<p>Any kind of file can be attached to a note. In Markdown, links to these files are represented as an ID. In the note viewer, these files, if they are images, will be displayed or, if they are other files (PDF, text files, etc.) they will be displayed as links. Clicking on this link will open the file in the default application.</p>
+<p>Images can be attached either by clicking on “Attach file” or by pasting (with <code>Ctrl+V</code> or <code>Cmd+V</code>) an image directly in the editor, or by drag and dropping an image.</p>
+<p>More info about attachments: <a title="https://joplinapp.org/help/#attachments" href="https://joplinapp.org/help/#attachments">https://joplinapp.org/help/#attachments</a></p>
+<h2 id="search">Search</h2>
+<p>Joplin supports advanced search queries, which are fully documented on the official website: <a title="https://joplinapp.org/help/#searching" href="https://joplinapp.org/help/#searching">https://joplinapp.org/help/#searching</a></p>
+<h2 id="alarms">Alarms</h2>
+<p>An alarm can be associated with any to-do. It will be triggered at the given time by displaying a notification. To use this feature, see the documentation: <a title="https://joplinapp.org/help/#notifications" href="https://joplinapp.org/help/#notifications">https://joplinapp.org/help/#notifications</a></p>
+<h2 id="markdown-advanced-tips">Markdown advanced tips</h2>
+<p>Joplin uses and renders <a title="https://joplinapp.org/markdown/" href="https://joplinapp.org/markdown/">Github-flavoured Markdown</a> with a few variations and additions.</p>
+<p>For example, tables are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>You can also create lists of checkboxes. These checkboxes can be ticked directly in the viewer, or by adding an “x” inside:</p>
+<ul>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-14" /><label id="cb-label-md-checkbox-14" for="md-checkbox-14" class="checkbox-label-unchecked">Milk</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-15" /><label id="cb-label-md-checkbox-15" for="md-checkbox-15" class="checkbox-label-unchecked">Eggs</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-16" checked="checked" /><label id="cb-label-md-checkbox-16" for="md-checkbox-16" class="checkbox-label-checked">Beer</label></div></li>
+</ul>
+<p>Math expressions can be added using the <a title="https://khan.github.io/KaTeX/" href="https://khan.github.io/KaTeX/">KaTeX notation</a>:</p>
+<div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo><mtext> </mtext><msup><mi>e</mi><mrow><mn>2</mn><mi>π</mi><mi>i</mi><mi>ξ</mi><mi>x</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ξ</mi></mrow><annotation encoding="application/x-tex">f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em"></span></span><span class="base"><span class="strut" style="height:2.384573em;vertical-align:-0.970281em"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.414292em"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.970281em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578799999999998em"><span style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span></span><span style="top:-3.26344em"><span class="pstrut" style="height:3em"></span><span class="accent-body" style="left:-0.08332999999999999em"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.04601em">ξ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em"><span style="top:-3.1130000000000004em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight">πi</span><span class="mord mathnormal mtight" style="margin-right:0.04601em">ξ</span><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.04601em">ξ</span></span></span></span></span></div>
+<p>Various other tricks are possible, such as using HTML, or customising the CSS. See the Markdown documentation for more info - <a title="https://joplinapp.org/markdown/" href="https://joplinapp.org/markdown/">https://joplinapp.org/markdown/</a></p>
+<h2 id="community-and-further-help">Community and further help</h2>
+<ul>
+<li>For general discussion about Joplin, user support, software development questions, and to discuss new features, go to the <a title="https://discourse.joplinapp.org/" href="https://discourse.joplinapp.org/">Joplin Forum</a>. It is possible to login with your GitHub account.</li>
+<li>The latest news are posted <a title="https://www.patreon.com/joplin" href="https://www.patreon.com/joplin">on the Patreon page</a>.</li>
+<li>For bug reports and feature requests, go to the <a title="https://github.com/laurent22/joplin/issues" href="https://github.com/laurent22/joplin/issues">GitHub Issue Tracker</a>.</li>
+</ul>
+<h2 id="donations">Donations</h2>
+<p>Donations to Joplin support the development of the project. Developing quality applications mostly takes time, but there are also some expenses, such as digital certificates to sign the applications, app store fees, hosting, etc. Most of all, your donation will make it possible to keep up the current development standard.</p>
+<p>Please see the <a title="https://joplinapp.org/donate/" href="https://joplinapp.org/donate/">donation page</a> for information on how to support the development of Joplin.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[5. Joplin Privacy Policy]]></title>
+            <guid>5c60c163b2534982aaaea1407d8a4264</guid>
+            <pubDate>Wed, 20 Jul 2022 12:02:37 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-17" /><label id="cb-label-md-checkbox-17" for="md-checkbox-17" class="checkbox-label-unchecked">- [ ] 列表项25/07/2022 16:36</label></div></li>
+</ul>
+<ol>
+<li></li>
+</ol>
+<ul>
+<li></li>
+</ul>
+<ol start="2">
+<li></li>
+</ol>
+<ul>
+<li>[ ]</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li>*# Joplin Privacy Policy</li>
+</ul>
+</li>
+</ul>
+<p>The Joplin applications, including the Android, iOS, Windows, macOS and Linux applications, do not send any data to any service without your authorisation. Any data that Joplin saves, such as notes or images, are saved to your own device and you are free to delete this data at any time.</p>
+<p>If you choose to synchronise with a third-party, such as OneDrive or Dropbox, the notes will be sent to that account, in which case the third-party privacy policy applies.</p>
+<p>In order to provide certain features, Joplin may need to connect to third-party services. You can disable most of these features in the application settings:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+<th>Default</th>
+<th>Can be disabled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto-update</td>
+<td>Joplin periodically connects to GitHub to check for new releases.</td>
+<td>Enabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Geo-location</td>
+<td>Joplin saves geo-location information in note properties when you create a note.</td>
+<td>Enabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Synchronisation</td>
+<td>Joplin supports synchronisation of your notes across multiple devices. If you choose to synchronise with a third-party, such as OneDrive, the notes will be sent to your OneDrive account, in which case the third-party privacy policy applies.</td>
+<td>Disabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Wifi connection check</td>
+<td>On mobile, Joplin checks for Wifi connectivity to give the option to synchronise data only when Wifi is enabled.</td>
+<td>Enabled</td>
+<td>No <sup class="jop-noMdConv">(1)</sup></td>
+</tr>
+<tr>
+<td>Spellchecker dictionary</td>
+<td>On Linux and Windows, the desktop application downloads the spellchecker dictionary from <code>redirector.gvt1.com</code>.</td>
+<td>Enabled</td>
+<td>Yes <sup class="jop-noMdConv">(2)</sup></td>
+</tr>
+<tr>
+<td>Plugin repository</td>
+<td>The desktop application downloads the list of available plugins from the <a title="https://github.com/joplin/plugins" href="https://github.com/joplin/plugins">official GitHub repository</a>. If this repository is not accessible (eg. in China) the app will try to get the plugin list from <a title="https://github.com/laurent22/joplin/blob/8ac6017c02017b6efd59f5fcab7e0b07f8d44164/packages/lib/services/plugins/RepositoryApi.ts#L22" href="https://github.com/laurent22/joplin/blob/8ac6017c02017b6efd59f5fcab7e0b07f8d44164/packages/lib/services/plugins/RepositoryApi.ts#L22">various mirrors</a>, in which case the plugin screen <a title="https://github.com/laurent22/joplin/issues/5161#issuecomment-925226975" href="https://github.com/laurent22/joplin/issues/5161#issuecomment-925226975">works slightly differently</a>.</td>
+<td>Enabled</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><sup class="jop-noMdConv">(1) <a title="https://github.com/laurent22/joplin/issues/5705" href="https://github.com/laurent22/joplin/issues/5705">https://github.com/laurent22/joplin/issues/5705</a></sup>
+<sup class="jop-noMdConv">(2) If the spellchecker is disabled, <a title="https://discourse.joplinapp.org/t/new-version-of-joplin-contacting-google-servers-on-startup/23000/40?u=laurent" href="https://discourse.joplinapp.org/t/new-version-of-joplin-contacting-google-servers-on-startup/23000/40?u=laurent">it will not download the dictionary</a>.</sup></p>
+<p>For any question about Joplin privacy policy, please leave a message <a title="https://discourse.joplinapp.org/" href="https://discourse.joplinapp.org/">on the forum</a>.</p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
