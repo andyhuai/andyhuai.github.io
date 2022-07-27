@@ -373,6 +373,13 @@ template {
   margin-bottom: 60px;
 }
 
+.logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
 .homepage-title,
 .homepage-subtitle {
   text-align: center;
