@@ -363,7 +363,7 @@ template {
 .homepage-main {
   margin: 0 auto;
   position: relative;
-  top: 30%;
+  top: 20%;
   font-weight: normal;
   margin: 0 0 10px;
 }
@@ -374,9 +374,10 @@ template {
 }
 
 .logo {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
+  height: 170px;
+  width: 170px;
+  margin: auto auto 20px;
+  border-radius: 85px;
   overflow: hidden;
 }
 
