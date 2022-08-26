@@ -1,17 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-    <channel>
-        <title></title>
-        <link>undefined</link>
-        <description>undefined</description>
-        <lastBuildDate>Fri, 26 Aug 2022 07:04:58 GMT</lastBuildDate>
-        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>Joplin Pages Publisher</generator>
-        <item>
-            <title><![CDATA[使用Air724ug开发板进行短信转发]]></title>
-            <guid>92781a23d8ca4bb0a99c4682385956d2</guid>
-            <pubDate>Fri, 26 Aug 2022 06:34:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="需求">需求</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="../../_assets/main.css" />
+
+    <title>使用Air724ug开发板进行短信转发 - 七彩的黄昏</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">七彩的黄昏</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">使用Air724ug开发板进行短信转发</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1661495668988"
+                  >2022-08-26 14:34</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1661497450541"
+                  >2022-08-26 15:04</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="需求">需求</h1>
 <p>我有一个0月租的电信手机卡，一直都是当做备用机进行注册账号，收发垃圾短信使用，之前的方案是： 树莓派+ec20 + 卡托 + gammu-smsd进行处理转发，但是不知道是树莓派问题还是ec20多问题，不是很稳定，所以寻找替代方案。无意中看到了4G LTE DTU模块，可以用来尝试一波。</p>
 <h1 id="硬件">硬件</h1>
 <ul>
@@ -156,69 +177,26 @@ sys.run()</code></pre></div>
 </ul>
 <h1 id="后记">后记</h1>
 <p>使用两天后，效果非常好，几乎收到短信2s左右就会推送到手机，相比之前的方案，实时性提高了。但是由于不能使用WIFI网络，需要消耗一定的流量，同样带来的好处是，不依赖外部网络，在线率更高。</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[使用Joplin发布Netlify博客]]></title>
-            <guid>de6b970e2649436d99f8d47fd7ae3f46</guid>
-            <pubDate>Tue, 26 Jul 2022 08:16:40 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p>最近一直使用Joplin作为markdown 笔记软件，使用起来还不错，但是分享内容 不是很方便，所有Google了一下，总结下实现方案</p>
-</blockquote>
-<h3 id="安装配置joplin插件">安装配置Joplin插件</h3>
-<ul>
-<li>
-<p>下载插件 joplin-plugin-pages-publisher
-<a title="https://github.com/joplin/plugins/blob/master/README.md#plugins" href="https://github.com/joplin/plugins/blob/master/README.md#plugins">下载地址</a>
-在列表中的 <code>pages publisher</code> 插件</p>
-</li>
-<li>
-<p>配置插件
-插件的开发者仓库： <a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">Github</a>
-作者的github页面有详细配置个教程，按流程配置成功后，可以正常访问github pages。
-<strong>需要使用 <code>xxx.github.io</code> 的repo名称，不然会找不到_assets目录，导致css加载不出来</strong></p>
-</li>
-<li>
-<p>配置完成后，如果不使用netlify的话，GIthub pags就配置完成了。</p>
-</li>
-</ul>
-<h3 id="配置netlify">配置Netlify</h3>
-<p>github pages国内访问不太稳定，所以考虑使用Netlify进行部署博客</p>
-<ul>
-<li>
-<p>登录Netlify，创建Site
-直接使用Github登录Netlify，并且进行授权访问 repo，直接拉去github仓库进行Deploy，部署成功后，就可以使用Netlify提供的域名进行访问测试了</p>
-</li>
-<li>
-<p>配置domain域名
-Netlify网上的教程都是使用顶级域名，没有使用二级子域名的教程，自己尝试一下，设置成功。</p>
-<ol>
-<li>
-<p>在Netlify中设置域名
-<img src="/_resources/d5b33c694f714f05af24c6ae1bc40345.png" />
-<img src="/_resources/20f1fa7d42f74553a41bc049ef3df560.png" />
-<img src="/_resources/ee7cff905f854935b71c71488f1c0b83.png" /></p>
-</li>
-<li>
-<p>修改域名的DNS解析
-此处大多数教程都是直接修改name server，由于我的主域名想解析到Netlify，所以使用二级域名。<strong>在域名管理处，修改二级域名的NS解析，指向Netlify的DNS</strong>
-<img src="/_resources/2356440f2fff4cc0b988b71986505dec.png" /></p>
-</li>
-<li>
-<p>回到Netlify中，<code>Check DNS configuration</code> 进行检测，DNS生效后，就通过验证。</p>
-</li>
-<li>
-<p>配置SSL，点击界面上的的按钮，申请Let’s Encrypt证书
-<img src="/_resources/c685268c505e4b0f9b7df1eb7e99aa9c.png" /></p>
-</li>
-<li>
-<p>直接访问页面，就可以使用https进行访问博客系统的了</p>
-</li>
-</ol>
-<p><strong><a title="https://blog.okwlan.com/" href="https://blog.okwlan.com/">Demo</a></strong></p>
-</li>
-</ul>
-]]></content:encoded>
-        </item>
-    </channel>
-</rss>
+</div>
+        <div id="gitalk-container"></div>
+      </article>
+    </div>
+  </body>
+  <footer>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var talk = new Gitalk({
+    clientID: 'ee86d8179da0d561d4ac',
+    clientSecret: 'd82d31a43cba5fe05d432cea9c241871196c7ce6',
+    repo: 'comment',
+    owner: 'andyhuai',
+    admin: ['andyhuai','bigwit'],
+    id: '92781a23d8ca4bb0a99c4682385956d2',      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  talk.render('gitalk-container')
+</script>
+
+  </footer>
+</html>
