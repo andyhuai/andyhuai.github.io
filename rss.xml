@@ -4,69 +4,9 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Thu, 13 Apr 2023 06:13:20 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Apr 2023 10:17:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
-        <item>
-            <title><![CDATA[锐捷MA2820T 刷 华硕AX55]]></title>
-            <guid>c69688d05837499ba0d5f81b7b665129</guid>
-            <pubDate>Sat, 08 Apr 2023 14:14:10 GMT</pubDate>
-            <content:encoded><![CDATA[<ol>
-<li>
-<p>前提<br />
-锐捷 ma2820(T)硬件配置为 CPU: BCM6755, RAM: 256m, ROM: 128, 交换机为<code>螃蟹</code>RTLd的交换机， 配置和华硕RT-AX55 或者 RT-AX56U V2完全一致。注意如果是BCM的交换机，需要升级RAM 512m ROM：256m才能刷华硕梅林固件。</p>
-</li>
-<li>
-<p>所需文件</p>
-<ul>
-<li>过度固件：<a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/RT-AX55_3.0.0.4_386_49559-g6bbef69_cferom_puresqubi.w" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/RT-AX55_3.0.0.4_386_49559-g6bbef69_cferom_puresqubi.w">AX55</a></li>
-<li>第1分区固件: <a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/1h.bin" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/1h.bin">1h</a></li>
-<li>华硕原版AX55固件: <a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/%E5%8E%9F%E5%8E%82/RT-AX55_3.0.0.4_386_50224-gc45ea49_puresqubi.w" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/%E5%8E%9F%E5%8E%82/RT-AX55_3.0.0.4_386_50224-gc45ea49_puresqubi.w">Asus AX55</a></li>
-</ul>
-</li>
-<li>
-<p>刷机</p>
-<ul>
-<li>
-<p>拆机，焊接TTL端子<br />
-<img src="/_resources/5712116bc1934d07955d45b74b89a546.png" /></p>
-</li>
-<li>
-<p>开机进入TTL<br />
-开机连接号TTL如CH340 之内的串口工具，波特率为115200，若开机没有数据，交换TX RX即可，注意 VCC 不需要接， 跑马后，不停按回车，中断启动，进入TTL命令行界面</p>
-</li>
-<li>
-<p>重新分区<br />
-进入CFE命令后，输入<code>b</code>进入进入编辑，前几个步骤直接回车，知道分区步骤，重新分区。安装 <code>4M 15M 1M 4M</code>进行分区。<strong>分区完毕后，不要断电，不要重启</strong><br />
-<img src="/_resources/702db85cdbe6426c9596a54cbf00770e.png" /><br />
-<img src="/_resources/5fb96d81f8d24fd5993bf10211d61049.png" /></p>
-</li>
-<li>
-<p>CFE界面刷AX55过度固件</p>
-<p>1）分区完毕后，用网线和电脑连接，注意：<strong>路由器网线插在1口上</strong><br />
-2）将电脑的IP设置为： 192.168.10.X,其他自动<br />
-3）网页打开<code>192.168.10.1</code>进入CFE网页<br />
-4）分区不要选择，直接选择AX55过度固件进行刷机<br />
-5）完成后，会重启</p>
-</li>
-<li>
-<p>TTL中CFE命令行改机型<br />
-重启后进入CFE命令界面，选择机型<code>AX55</code>，之后会重启</p>
-</li>
-<li>
-<p>CFE网页刷第1分区</p>
-<ul>
-<li>修改原版的1h.bin,使用UE或者winhex查找<code>d4:5d:64:4d:75:80</code>全部替换成当前机器的MAC地址，文件另存1-mod.bin</li>
-<li>进入CFE网页，选择分区1， 文件选择1-mod.bin,刷写1分区</li>
-<li>完成后会重启，拔掉 TTL 进入系统，进行升级官方原版系统，或者其他官改系统<br />
-<img src="/_resources/6b826ff8bab347db97652a17fa374407.png" /></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[HG5140A获取密码]]></title>
             <guid>275d177683d847fe92989ef5f529abc9</guid>
