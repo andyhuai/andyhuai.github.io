@@ -33,19 +33,19 @@
           </div>
         </header>
         <div class="article-content markdown-body"><h2 id="前言">前言</h2>
-<p>一直在寻找小巧的但盘位NAS，之前有猫盘，但是那Marvell ARMADA A3720 的CPU，实在是太羸弱了，最近找到了一款口袋电脑，N3150 CPU，4G内存可更换，接口齐全，大小只比2.5寸硬盘稍大，完美。
-<img src="/_resources/0d0262fd4abd4ad19e398bba3ebf57a3.png" />
-<img src="/_resources/0783d07889e240a08a2058a31666eaf0.png" />
+<p>一直在寻找小巧的但盘位NAS，之前有猫盘，但是那Marvell ARMADA A3720 的CPU，实在是太羸弱了，最近找到了一款口袋电脑，N3150 CPU，4G内存可更换，接口齐全，大小只比2.5寸硬盘稍大，完美。<br />
+<img src="/_resources/0d0262fd4abd4ad19e398bba3ebf57a3.png" /><br />
+<img src="/_resources/0783d07889e240a08a2058a31666eaf0.png" /><br />
 <img src="/_resources/5560a8304e604b1ba59db29ced0f6be6.png" /></p>
 <h2 id="拆机">拆机</h2>
-<p>口袋主机分2层，上面一层装的主板，下面一层装的是硬盘，中间有散热排风扇。
-<img src="/_resources/aeb1f763b5f949b282efda7105742cbc.png" />
-<img src="/_resources/328a3eb24c6b4c83a835b78f532bde63.png" />
+<p>口袋主机分2层，上面一层装的主板，下面一层装的是硬盘，中间有散热排风扇。<br />
+<img src="/_resources/aeb1f763b5f949b282efda7105742cbc.png" /><br />
+<img src="/_resources/328a3eb24c6b4c83a835b78f532bde63.png" /><br />
 <img src="/_resources/a65f69161ecf47779bdc154345869265.png" /></p>
-<p>可以看到主板上内存可以拆卸更换，还有m2的无线网卡，或许可以扩展其他好玩的东西。
+<p>可以看到主板上内存可以拆卸更换，还有m2的无线网卡，或许可以扩展其他好玩的东西。<br />
 主板和上面硬盘部分通过FPC排线连接，包含USB、HDMI扩展口，SATA仓位有金属固定架，背面有镂空散热孔，正常使用问题不大。</p>
 <h2 id="安装黑群晖">安装黑群晖</h2>
-<p>现在群晖的引导已经GITHUB开源，可以使用在线自定义快速编译，定制自己需要引导。地址： <a title="https://github.com/wjz304/Redpill_CustomBuild" href="https://github.com/wjz304/Redpill_CustomBuild">Redpill_CustomBuild</a>
+<p>现在群晖的引导已经GITHUB开源，可以使用在线自定义快速编译，定制自己需要引导。地址： <a title="https://github.com/wjz304/Redpill_CustomBuild" href="https://github.com/wjz304/Redpill_CustomBuild">Redpill_CustomBuild</a><br />
 <img src="/_resources/8060cc5f07114cf0a6c8f2764c04f2a2.png" /></p>
 <p>今天我使用的不是上述方法，采用本机自动编译的方法进行打包生成黑群引导。使用巴西人创建的开源arpl引导，GITHUB地址：<a title="https://github.com/fbelavenuto/arpl" href="https://github.com/fbelavenuto/arpl">Automated Redpill Loader</a></p>
 <p>使用方法：</p>
@@ -60,7 +60,7 @@
 <p>将U盘插入口袋PC，并插上网线，确保能够访问外网，启动PC，按ESC进入BIOS，使用USB启动。</p>
 </li>
 <li>
-<p>进入arpl初始化界面，执行成功后，会出现以下界面：
+<p>进入arpl初始化界面，执行成功后，会出现以下界面：<br />
 <img src="/_resources/ddbd583f5ecf419e8f7deabab4b2bd88.png" /></p>
 </li>
 <li>
@@ -97,7 +97,7 @@
     clientSecret: 'd82d31a43cba5fe05d432cea9c241871196c7ce6',
     repo: 'comment',
     owner: 'andyhuai',
-    admin: ['andyhuai','bigwit'],
+    admin: ['andyhuai','bigwit' ],
     id: '937d7e492ccb45ba94ac3127a579e739',      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })

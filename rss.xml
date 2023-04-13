@@ -4,27 +4,137 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 20 Dec 2022 02:49:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Apr 2023 06:13:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[锐捷MA2820T 刷 华硕AX55]]></title>
+            <guid>c69688d05837499ba0d5f81b7b665129</guid>
+            <pubDate>Sat, 08 Apr 2023 14:14:10 GMT</pubDate>
+            <content:encoded><![CDATA[<ol>
+<li>
+<p>前提<br />
+锐捷 ma2820(T)硬件配置为 CPU: BCM6755, RAM: 256m, ROM: 128, 交换机为<code>螃蟹</code>RTLd的交换机， 配置和华硕RT-AX55 或者 RT-AX56U V2完全一致。注意如果是BCM的交换机，需要升级RAM 512m ROM：256m才能刷华硕梅林固件。</p>
+</li>
+<li>
+<p>所需文件</p>
+<ul>
+<li>过度固件：<a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/RT-AX55_3.0.0.4_386_49559-g6bbef69_cferom_puresqubi.w" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/RT-AX55_3.0.0.4_386_49559-g6bbef69_cferom_puresqubi.w">AX55</a></li>
+<li>第1分区固件: <a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/1h.bin" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/1h.bin">1h</a></li>
+<li>华硕原版AX55固件: <a title="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/%E5%8E%9F%E5%8E%82/RT-AX55_3.0.0.4_386_50224-gc45ea49_puresqubi.w" href="https://home.okwlan.com:7011/resource/%E8%B7%AF%E7%94%B1%E5%99%A8/ma2820T/%E5%8E%9F%E5%8E%82/RT-AX55_3.0.0.4_386_50224-gc45ea49_puresqubi.w">Asus AX55</a></li>
+</ul>
+</li>
+<li>
+<p>刷机</p>
+<ul>
+<li>
+<p>拆机，焊接TTL端子<br />
+<img src="/_resources/5712116bc1934d07955d45b74b89a546.png" /></p>
+</li>
+<li>
+<p>开机进入TTL<br />
+开机连接号TTL如CH340 之内的串口工具，波特率为115200，若开机没有数据，交换TX RX即可，注意 VCC 不需要接， 跑马后，不停按回车，中断启动，进入TTL命令行界面</p>
+</li>
+<li>
+<p>重新分区<br />
+进入CFE命令后，输入<code>b</code>进入进入编辑，前几个步骤直接回车，知道分区步骤，重新分区。安装 <code>4M 15M 1M 4M</code>进行分区。<strong>分区完毕后，不要断电，不要重启</strong><br />
+<img src="/_resources/702db85cdbe6426c9596a54cbf00770e.png" /><br />
+<img src="/_resources/5fb96d81f8d24fd5993bf10211d61049.png" /></p>
+</li>
+<li>
+<p>CFE界面刷AX55过度固件</p>
+<p>1）分区完毕后，用网线和电脑连接，注意：<strong>路由器网线插在1口上</strong><br />
+2）将电脑的IP设置为： 192.168.10.X,其他自动<br />
+3）网页打开<code>192.168.10.1</code>进入CFE网页<br />
+4）分区不要选择，直接选择AX55过度固件进行刷机<br />
+5）完成后，会重启</p>
+</li>
+<li>
+<p>TTL中CFE命令行改机型<br />
+重启后进入CFE命令界面，选择机型<code>AX55</code>，之后会重启</p>
+</li>
+<li>
+<p>CFE网页刷第1分区</p>
+<ul>
+<li>修改原版的1h.bin,使用UE或者winhex查找<code>d4:5d:64:4d:75:80</code>全部替换成当前机器的MAC地址，文件另存1-mod.bin</li>
+<li>进入CFE网页，选择分区1， 文件选择1-mod.bin,刷写1分区</li>
+<li>完成后会重启，拔掉 TTL 进入系统，进行升级官方原版系统，或者其他官改系统<br />
+<img src="/_resources/6b826ff8bab347db97652a17fa374407.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[HG5140A获取密码]]></title>
+            <guid>275d177683d847fe92989ef5f529abc9</guid>
+            <pubDate>Fri, 03 Mar 2023 03:33:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p>烽火2021后新光猫：<br />
+mac用包装盒标签的，部分型号内外mac不一致<br />
+开telnet<br />
+/cgi-bin/telnetenable.cgi?telnetenable=1&amp;key=牛皮纸盒外包装标签的MAC地址<br />
+telnet用户名密码：<br />
+telecom nE7jA%5m<br />
+telnetadmin FH-nE7jA%5m牛皮纸盒外包装标签的MAC地址后六位<br />
+查看超级密码：<br />
+cfg_cmd get InternetGatewayDevice.DeviceInfo.X_CT-COM_TeleComAccount.Password<br />
+su密码：<br />
+Fh@牛皮纸盒外包装标签的MAC地址后六位<br />
+进入工厂模式（海思方案不适用）：<br />
+load_cli factory<br />
+显示所有信息<br />
+show all<br />
+改GPON<br />
+set current_ponmode GPON<br />
+改EPON<br />
+set current_ponmode EPON</p>
+<p>set device_oui 111111<br />
+set device_sn 改GPON SN<br />
+set mac_num 改mac</p>
+<p>超级用户名<br />
+show admin_name<br />
+超级密码<br />
+show admin_pwd<br />
+地区<br />
+show area_code<br />
+当前PON模式<br />
+show current_ponmode<br />
+定制厂商<br />
+show custom<br />
+型号<br />
+show device_model<br />
+show mac_num<br />
+show gpon_sn</p>
+<p>开启网页工厂模式<br />
+set factorymode enable<br />
+关闭网页工厂模式<br />
+set factorymode disable<br />
+工厂模式状态<br />
+show  factorymode</p>
+<p>改地区改SN刷固件在web工厂模式<br />
+用户名:fiberhomehg2x0 密码:hg2x</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[N3150 Pocket PC 最小x86黑群晖装机]]></title>
             <guid>937d7e492ccb45ba94ac3127a579e739</guid>
             <pubDate>Sat, 26 Nov 2022 01:48:06 GMT</pubDate>
             <content:encoded><![CDATA[<h2 id="前言">前言</h2>
-<p>一直在寻找小巧的但盘位NAS，之前有猫盘，但是那Marvell ARMADA A3720 的CPU，实在是太羸弱了，最近找到了一款口袋电脑，N3150 CPU，4G内存可更换，接口齐全，大小只比2.5寸硬盘稍大，完美。
-<img src="/_resources/0d0262fd4abd4ad19e398bba3ebf57a3.png" />
-<img src="/_resources/0783d07889e240a08a2058a31666eaf0.png" />
+<p>一直在寻找小巧的但盘位NAS，之前有猫盘，但是那Marvell ARMADA A3720 的CPU，实在是太羸弱了，最近找到了一款口袋电脑，N3150 CPU，4G内存可更换，接口齐全，大小只比2.5寸硬盘稍大，完美。<br />
+<img src="/_resources/0d0262fd4abd4ad19e398bba3ebf57a3.png" /><br />
+<img src="/_resources/0783d07889e240a08a2058a31666eaf0.png" /><br />
 <img src="/_resources/5560a8304e604b1ba59db29ced0f6be6.png" /></p>
 <h2 id="拆机">拆机</h2>
-<p>口袋主机分2层，上面一层装的主板，下面一层装的是硬盘，中间有散热排风扇。
-<img src="/_resources/aeb1f763b5f949b282efda7105742cbc.png" />
-<img src="/_resources/328a3eb24c6b4c83a835b78f532bde63.png" />
+<p>口袋主机分2层，上面一层装的主板，下面一层装的是硬盘，中间有散热排风扇。<br />
+<img src="/_resources/aeb1f763b5f949b282efda7105742cbc.png" /><br />
+<img src="/_resources/328a3eb24c6b4c83a835b78f532bde63.png" /><br />
 <img src="/_resources/a65f69161ecf47779bdc154345869265.png" /></p>
-<p>可以看到主板上内存可以拆卸更换，还有m2的无线网卡，或许可以扩展其他好玩的东西。
+<p>可以看到主板上内存可以拆卸更换，还有m2的无线网卡，或许可以扩展其他好玩的东西。<br />
 主板和上面硬盘部分通过FPC排线连接，包含USB、HDMI扩展口，SATA仓位有金属固定架，背面有镂空散热孔，正常使用问题不大。</p>
 <h2 id="安装黑群晖">安装黑群晖</h2>
-<p>现在群晖的引导已经GITHUB开源，可以使用在线自定义快速编译，定制自己需要引导。地址： <a title="https://github.com/wjz304/Redpill_CustomBuild" href="https://github.com/wjz304/Redpill_CustomBuild">Redpill_CustomBuild</a>
+<p>现在群晖的引导已经GITHUB开源，可以使用在线自定义快速编译，定制自己需要引导。地址： <a title="https://github.com/wjz304/Redpill_CustomBuild" href="https://github.com/wjz304/Redpill_CustomBuild">Redpill_CustomBuild</a><br />
 <img src="/_resources/8060cc5f07114cf0a6c8f2764c04f2a2.png" /></p>
 <p>今天我使用的不是上述方法，采用本机自动编译的方法进行打包生成黑群引导。使用巴西人创建的开源arpl引导，GITHUB地址：<a title="https://github.com/fbelavenuto/arpl" href="https://github.com/fbelavenuto/arpl">Automated Redpill Loader</a></p>
 <p>使用方法：</p>
@@ -39,7 +149,7 @@
 <p>将U盘插入口袋PC，并插上网线，确保能够访问外网，启动PC，按ESC进入BIOS，使用USB启动。</p>
 </li>
 <li>
-<p>进入arpl初始化界面，执行成功后，会出现以下界面：
+<p>进入arpl初始化界面，执行成功后，会出现以下界面：<br />
 <img src="/_resources/ddbd583f5ecf419e8f7deabab4b2bd88.png" /></p>
 </li>
 <li>
@@ -207,7 +317,7 @@ sys.run()</code></pre></div>
 <ul>
 <li>将 <code>BARK_URL</code> 改成自己对应的bark app 推送地址</li>
 <li>如果使用其他推送，修改 <code>notifyToBark</code> 函数，实现相关逻辑</li>
-<li>默认开启了来电提醒，会将来电号码推送给手机，如果不需要
+<li>默认开启了来电提醒，会将来电号码推送给手机，如果不需要<br />
 将<code>notifyToBark(num.." 给您来电")</code>注释掉</li>
 <li>默认开启了来电自动接听，并且播放TTS语音提醒，如果不需要，注释掉电话相关的回调注册</li>
 </ul>
@@ -225,14 +335,14 @@ sys.run()</code></pre></div>
 <h3 id="安装配置joplin插件">安装配置Joplin插件</h3>
 <ul>
 <li>
-<p>下载插件 joplin-plugin-pages-publisher
-<a title="https://github.com/joplin/plugins/blob/master/README.md#plugins" href="https://github.com/joplin/plugins/blob/master/README.md#plugins">下载地址</a>
+<p>下载插件 joplin-plugin-pages-publisher<br />
+<a title="https://github.com/joplin/plugins/blob/master/README.md#plugins" href="https://github.com/joplin/plugins/blob/master/README.md#plugins">下载地址</a><br />
 在列表中的 <code>pages publisher</code> 插件</p>
 </li>
 <li>
-<p>配置插件
-插件的开发者仓库： <a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">Github</a>
-作者的github页面有详细配置个教程，按流程配置成功后，可以正常访问github pages。
+<p>配置插件<br />
+插件的开发者仓库： <a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">Github</a><br />
+作者的github页面有详细配置个教程，按流程配置成功后，可以正常访问github pages。<br />
 <strong>需要使用 <code>xxx.github.io</code> 的repo名称，不然会找不到_assets目录，导致css加载不出来</strong></p>
 </li>
 <li>
@@ -243,29 +353,29 @@ sys.run()</code></pre></div>
 <p>github pages国内访问不太稳定，所以考虑使用Netlify进行部署博客</p>
 <ul>
 <li>
-<p>登录Netlify，创建Site
+<p>登录Netlify，创建Site<br />
 直接使用Github登录Netlify，并且进行授权访问 repo，直接拉去github仓库进行Deploy，部署成功后，就可以使用Netlify提供的域名进行访问测试了</p>
 </li>
 <li>
-<p>配置domain域名
+<p>配置domain域名<br />
 Netlify网上的教程都是使用顶级域名，没有使用二级子域名的教程，自己尝试一下，设置成功。</p>
 <ol>
 <li>
-<p>在Netlify中设置域名
-<img src="/_resources/d5b33c694f714f05af24c6ae1bc40345.png" />
-<img src="/_resources/20f1fa7d42f74553a41bc049ef3df560.png" />
+<p>在Netlify中设置域名<br />
+<img src="/_resources/d5b33c694f714f05af24c6ae1bc40345.png" /><br />
+<img src="/_resources/20f1fa7d42f74553a41bc049ef3df560.png" /><br />
 <img src="/_resources/ee7cff905f854935b71c71488f1c0b83.png" /></p>
 </li>
 <li>
-<p>修改域名的DNS解析
-此处大多数教程都是直接修改name server，由于我的主域名想解析到Netlify，所以使用二级域名。<strong>在域名管理处，修改二级域名的NS解析，指向Netlify的DNS</strong>
+<p>修改域名的DNS解析<br />
+此处大多数教程都是直接修改name server，由于我的主域名想解析到Netlify，所以使用二级域名。<strong>在域名管理处，修改二级域名的NS解析，指向Netlify的DNS</strong><br />
 <img src="/_resources/2356440f2fff4cc0b988b71986505dec.png" /></p>
 </li>
 <li>
 <p>回到Netlify中，<code>Check DNS configuration</code> 进行检测，DNS生效后，就通过验证。</p>
 </li>
 <li>
-<p>配置SSL，点击界面上的的按钮，申请Let’s Encrypt证书
+<p>配置SSL，点击界面上的的按钮，申请Let's Encrypt证书<br />
 <img src="/_resources/c685268c505e4b0f9b7df1eb7e99aa9c.png" /></p>
 </li>
 <li>

@@ -38,14 +38,14 @@
 <h3 id="安装配置joplin插件">安装配置Joplin插件</h3>
 <ul>
 <li>
-<p>下载插件 joplin-plugin-pages-publisher
-<a title="https://github.com/joplin/plugins/blob/master/README.md#plugins" href="https://github.com/joplin/plugins/blob/master/README.md#plugins">下载地址</a>
+<p>下载插件 joplin-plugin-pages-publisher<br />
+<a title="https://github.com/joplin/plugins/blob/master/README.md#plugins" href="https://github.com/joplin/plugins/blob/master/README.md#plugins">下载地址</a><br />
 在列表中的 <code>pages publisher</code> 插件</p>
 </li>
 <li>
-<p>配置插件
-插件的开发者仓库： <a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">Github</a>
-作者的github页面有详细配置个教程，按流程配置成功后，可以正常访问github pages。
+<p>配置插件<br />
+插件的开发者仓库： <a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">Github</a><br />
+作者的github页面有详细配置个教程，按流程配置成功后，可以正常访问github pages。<br />
 <strong>需要使用 <code>xxx.github.io</code> 的repo名称，不然会找不到_assets目录，导致css加载不出来</strong></p>
 </li>
 <li>
@@ -56,29 +56,29 @@
 <p>github pages国内访问不太稳定，所以考虑使用Netlify进行部署博客</p>
 <ul>
 <li>
-<p>登录Netlify，创建Site
+<p>登录Netlify，创建Site<br />
 直接使用Github登录Netlify，并且进行授权访问 repo，直接拉去github仓库进行Deploy，部署成功后，就可以使用Netlify提供的域名进行访问测试了</p>
 </li>
 <li>
-<p>配置domain域名
+<p>配置domain域名<br />
 Netlify网上的教程都是使用顶级域名，没有使用二级子域名的教程，自己尝试一下，设置成功。</p>
 <ol>
 <li>
-<p>在Netlify中设置域名
-<img src="/_resources/d5b33c694f714f05af24c6ae1bc40345.png" />
-<img src="/_resources/20f1fa7d42f74553a41bc049ef3df560.png" />
+<p>在Netlify中设置域名<br />
+<img src="/_resources/d5b33c694f714f05af24c6ae1bc40345.png" /><br />
+<img src="/_resources/20f1fa7d42f74553a41bc049ef3df560.png" /><br />
 <img src="/_resources/ee7cff905f854935b71c71488f1c0b83.png" /></p>
 </li>
 <li>
-<p>修改域名的DNS解析
-此处大多数教程都是直接修改name server，由于我的主域名想解析到Netlify，所以使用二级域名。<strong>在域名管理处，修改二级域名的NS解析，指向Netlify的DNS</strong>
+<p>修改域名的DNS解析<br />
+此处大多数教程都是直接修改name server，由于我的主域名想解析到Netlify，所以使用二级域名。<strong>在域名管理处，修改二级域名的NS解析，指向Netlify的DNS</strong><br />
 <img src="/_resources/2356440f2fff4cc0b988b71986505dec.png" /></p>
 </li>
 <li>
 <p>回到Netlify中，<code>Check DNS configuration</code> 进行检测，DNS生效后，就通过验证。</p>
 </li>
 <li>
-<p>配置SSL，点击界面上的的按钮，申请Let’s Encrypt证书
+<p>配置SSL，点击界面上的的按钮，申请Let's Encrypt证书<br />
 <img src="/_resources/c685268c505e4b0f9b7df1eb7e99aa9c.png" /></p>
 </li>
 <li>
@@ -102,7 +102,7 @@ Netlify网上的教程都是使用顶级域名，没有使用二级子域名的�
     clientSecret: 'd82d31a43cba5fe05d432cea9c241871196c7ce6',
     repo: 'comment',
     owner: 'andyhuai',
-    admin: ['andyhuai','bigwit'],
+    admin: ['andyhuai','bigwit' ],
     id: 'de6b970e2649436d99f8d47fd7ae3f46',      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })

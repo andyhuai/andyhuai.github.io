@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="../../_assets/main.css" />
+
+    <title>HG5140A获取密码 - 七彩的黄昏</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">七彩的黄昏</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">HG5140A获取密码</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1677814385014"
+                  >2023-03-03 11:33</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1677814396804"
+                  >2023-03-03 11:33</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p>烽火2021后新光猫：<br />
+mac用包装盒标签的，部分型号内外mac不一致<br />
+开telnet<br />
+/cgi-bin/telnetenable.cgi?telnetenable=1&amp;key=牛皮纸盒外包装标签的MAC地址<br />
+telnet用户名密码：<br />
+telecom nE7jA%5m<br />
+telnetadmin FH-nE7jA%5m牛皮纸盒外包装标签的MAC地址后六位<br />
+查看超级密码：<br />
+cfg_cmd get InternetGatewayDevice.DeviceInfo.X_CT-COM_TeleComAccount.Password<br />
+su密码：<br />
+Fh@牛皮纸盒外包装标签的MAC地址后六位<br />
+进入工厂模式（海思方案不适用）：<br />
+load_cli factory<br />
+显示所有信息<br />
+show all<br />
+改GPON<br />
+set current_ponmode GPON<br />
+改EPON<br />
+set current_ponmode EPON</p>
+<p>set device_oui 111111<br />
+set device_sn 改GPON SN<br />
+set mac_num 改mac</p>
+<p>超级用户名<br />
+show admin_name<br />
+超级密码<br />
+show admin_pwd<br />
+地区<br />
+show area_code<br />
+当前PON模式<br />
+show current_ponmode<br />
+定制厂商<br />
+show custom<br />
+型号<br />
+show device_model<br />
+show mac_num<br />
+show gpon_sn</p>
+<p>开启网页工厂模式<br />
+set factorymode enable<br />
+关闭网页工厂模式<br />
+set factorymode disable<br />
+工厂模式状态<br />
+show  factorymode</p>
+<p>改地区改SN刷固件在web工厂模式<br />
+用户名:fiberhomehg2x0 密码:hg2x</p>
+</div>
+        <div id="gitalk-container"></div>
+      </article>
+    </div>
+  </body>
+  <footer>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var talk = new Gitalk({
+    clientID: 'ee86d8179da0d561d4ac',
+    clientSecret: 'd82d31a43cba5fe05d432cea9c241871196c7ce6',
+    repo: 'comment',
+    owner: 'andyhuai',
+    admin: ['andyhuai','bigwit' ],
+    id: '275d177683d847fe92989ef5f529abc9',      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  talk.render('gitalk-container')
+</script>
+
+  </footer>
+</html>
